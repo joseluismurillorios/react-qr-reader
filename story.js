@@ -11,7 +11,7 @@ class Wrapper extends Component {
     const { selectFacingMode, selectDelay, legacyMode } = this.props
 
     return (
-      <div style={{ width: '400px', margin: 'auto' }}>
+      <div style={{ width: '400px', margin: 'auto', overflow: 'hidden' }}>
         {
           selectFacingMode && (
               <select

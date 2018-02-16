@@ -156,7 +156,8 @@ module.exports = class Reader extends Component {
       .then(vConstraints => navigator.mediaDevices.getUserMedia({
         video: {
           ...vConstraints,
-          aspectRatio: supportedConstraints.aspectRatio ? 1 : undefined,
+          // aspectRatio: supportedConstraints.aspectRatio ? 1 : undefined,
+          aspectRatio: undefined,
         }
       }))
       .then(this.handleVideo)
